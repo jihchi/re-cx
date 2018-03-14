@@ -26,6 +26,7 @@
     "bsconfig.json"
   ],
   "devDependencies": {
-    "bs-platform": "^2.1.0"
+    "bs-platform": "^2.1.0",
+    "classnames": "^2.2.5"
   }
 }
