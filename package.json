@@ -1,0 +1,31 @@
+{
+  "name": "bs-classnames",
+  "version": "0.1.0",
+  "description": "BuckleScript bindings to the classnames library",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appier/bs-classnames.git"
+  },
+  "keywords": [
+    "reason",
+    "bucklescript",
+    "classnames"
+  ],
+  "author": "Archie Lee <archielee@appier.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appier/bs-classnames/issues"
+  },
+  "homepage": "https://github.com/appier/bs-classnames#readme",
+  "files": [
+    "src/",
+    "bsconfig.json"
+  ],
+  "devDependencies": {
+    "bs-platform": "^2.1.0"
+  }
+}
