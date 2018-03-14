@@ -23,4 +23,3 @@
 /* # Alternate dedupe version */
 /* var classNames = require('classnames/dedupe'); */
 /* classNames('foo', 'foo', 'bar'); // => 'foo */
-

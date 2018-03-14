@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "BuckleScript bindings to the classnames library",
   "scripts": {
+		"test": "jest",
+		"watch:test": "jest --watch",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w"
   },
@@ -26,6 +28,7 @@
     "bsconfig.json"
   ],
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.2",
     "bs-platform": "^2.1.0",
     "classnames": "^2.2.5"
   }
