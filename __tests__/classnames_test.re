@@ -28,39 +28,32 @@ describe("Normal version", () => {
   );
   let cssmodule =
     Js.Dict.fromList([("foo", "foo_123"), ("bar", "bar_456")]);
+  let cx = Classnames.makeCx(cssmodule);
   test("css-module Global", () =>
-    Classnames.makeCx(cssmodule, [Global("baz"), Global("")])
-    |> expect
-    |> toBe("baz")
+    cx([Global("baz"), Global("")]) |> expect |> toBe("baz")
   );
   test("css-module GlobalIf", () =>
-    Classnames.makeCx(
-      cssmodule,
-      [
-        GlobalIf("foo", true),
-        GlobalIf("bar", false),
-        GlobalIf("", true),
-        GlobalIf("", false),
-      ],
-    )
+    cx([
+      GlobalIf("foo", true),
+      GlobalIf("bar", false),
+      GlobalIf("", true),
+      GlobalIf("", false),
+    ])
     |> expect
     |> toBe("foo")
   );
   test("css-module Local", () =>
-    Classnames.makeCx(cssmodule, [Local("foo"), Local("bar"), Local("")])
+    cx([Local("foo"), Local("bar"), Local("")])
     |> expect
     |> toBe("foo_123 bar_456")
   );
   test("css-module LocalIf", () =>
-    Classnames.makeCx(
-      cssmodule,
-      [
-        LocalIf("foo", true),
-        LocalIf("bar", false),
-        LocalIf("", true),
-        LocalIf("", false),
-      ],
-    )
+    cx([
+      LocalIf("foo", true),
+      LocalIf("bar", false),
+      LocalIf("", true),
+      LocalIf("", false),
+    ])
     |> expect
     |> toBe("foo_123")
   );
