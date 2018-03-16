@@ -41,3 +41,7 @@ Then add `re-cx` to `bs-dependencies` in your `bsconfig.json`:
 #### join3
 #### join4
 #### joinMany
+
+## Note
+
+This library is inspired by https://github.com/alexfedoseev/re-classnames
