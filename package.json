@@ -1,7 +1,7 @@
 {
-  "name": "bs-classnames",
+  "name": "re-cx",
   "version": "0.1.0",
-  "description": "BuckleScript bindings to the classnames library",
+  "description": "Classnames helper written in ReasonML",
   "scripts": {
 		"test": "jest",
 		"watch:test": "jest --watch",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appier/bs-classnames.git"
+    "url": "git+https://github.com/appier/re-cx.git"
   },
   "keywords": [
     "reason",
@@ -20,16 +20,15 @@
   "author": "Archie Lee <archielee@appier.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/appier/bs-classnames/issues"
+    "url": "https://github.com/appier/re-cx/issues"
   },
-  "homepage": "https://github.com/appier/bs-classnames#readme",
+  "homepage": "https://github.com/appier/re-cx#readme",
   "files": [
     "src/",
     "bsconfig.json"
   ],
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.2",
-    "bs-platform": "^2.1.0",
-    "classnames": "^2.2.5"
+    "bs-platform": "^2.1.0"
   }
 }
