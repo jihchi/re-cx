@@ -31,11 +31,22 @@ Then add `re-cx` to `bs-dependencies` in your `bsconfig.json`:
 }
 ```
 
-## Documentation
+## Usage
 
-### API
+```ml
+Cx.join2(Global("foo"), GlobalIf("bar", false)); /* => "foo" */
+```
 
 #### make
+
+This is for [css-modules](https://github.com/css-modules/css-modules) user. Just like [classnames' bind version](https://github.com/JedWatson/classnames#alternate-bind-version-for-css-modules).
+
+```ml
+let cssmodule = Js.Dict.fromList([("foo", "foo_123"), ("bar", "bar_456")]);
+let cx = Cx.make(cssmodule);
+cx([Local("foo"), LocalIf("bar", false)]); /* => "foo_123" */
+```
+
 #### join
 #### join2
 #### join3
