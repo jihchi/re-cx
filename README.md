@@ -48,10 +48,34 @@ cx([Local("foo"), LocalIf("bar", false)]); /* => "foo_123" */
 ```
 
 #### join
+
+```ml
+Cx.join(Local("foo")); /* => "foo" */
+```
+
 #### join2
+
+```ml
+Cx.join2(Local("foo"), LocalIf("bar", false)); /* => "foo" */
+```
+
 #### join3
+
+```ml
+Cx.join3(Local("foo"), LocalIf("bar", false), Local("baz")); /* => "foo baz" */
+```
+
 #### join4
+
+```ml
+Cx.join4(Local("foo"), LocalIf("bar", false), Local("baz"), Local("woo")); /* => "foo baz woo" */
+```
+
 #### joinMany
+
+```ml
+Cx.joinMany([Local("foo"), LocalIf("bar", false), Local("baz"), Local("woo")]); /* => "foo baz woo" */
+```
 
 ## Note
 
