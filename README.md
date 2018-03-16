@@ -5,6 +5,8 @@ Classnames helper written in ReasonML
 ## Example
 
 ```ml
+open ReCx; /* for "namespace: true" in bsconfig.json */
+
 let cssmodule = Js.Dict.fromList([("foo", "foo_123"), ("bar", "bar_456")]);
 
 let cx = Cx.make(cssmodule);
