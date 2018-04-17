@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Classnames helper written in ReasonML",
   "scripts": {
-		"test": "jest",
-		"watch:test": "jest --watch",
+    "test": "jest",
+    "watch:test": "jest --watch",
     "build": "bsb -make-world",
     "start": "bsb -make-world -w"
   },
@@ -12,21 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/appier/re-cx.git"
   },
-  "keywords": [
-    "reason",
-    "bucklescript",
-    "classnames"
-  ],
+  "keywords": ["reason", "bucklescript", "classnames"],
   "author": "Archie Lee <archielee@appier.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appier/re-cx/issues"
   },
   "homepage": "https://github.com/appier/re-cx#readme",
-  "files": [
-    "src/",
-    "bsconfig.json"
-  ],
+  "files": ["src/", "bsconfig.json"],
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.2",
     "bs-platform": "^2.1.0"
